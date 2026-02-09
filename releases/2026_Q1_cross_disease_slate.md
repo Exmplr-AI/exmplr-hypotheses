@@ -35,7 +35,7 @@ The diseases span high, moderate, and low clinical trial activity. This tests wh
 - A falsification criterion (what would disprove this prediction, with a time horizon)
 - A record of what was known at freeze time (existing approvals, trial phases)
 
-The full prediction set is available in `registry.parquet`. See [HYPOTHESIS_REGISTRY.md](../HYPOTHESIS_REGISTRY.md) for schema details.
+The full prediction set is available in `registry.parquet`. See [HYPOTHESIS_REGISTRY.md](../docs/HYPOTHESIS_REGISTRY.md) for schema details.
 
 ## Day-zero outcomes
 
@@ -70,7 +70,7 @@ These are retrospective signals, not prospective predictions coming true. They c
 
 - **Q2 2026 (~May)**: Rerun outcome ingestion after ChEMBL 35 release and CT.gov refresh. Publish updated outcome counts and metrics. Freeze Slate #2 for the same diseases.
 - **Q3 2026 (~August)**: Second outcome update. First measurement of genuinely prospective signals (positive time-to-event values).
-- **Q1 2027 (12-month mark)**: Full assessment against the [12-month success bar](../SYSTEM.md#f-12-month-success-bar). Publish whether the system meets, misses, or fails each criterion.
+- **Q1 2027 (12-month mark)**: Full assessment against the [12-month success bar](../docs/SYSTEM.md#f-12-month-success-bar). Publish whether the system meets, misses, or fails each criterion.
 
 ## What we do not claim
 
@@ -83,14 +83,14 @@ We claim only that these predictions are frozen, falsifiable, and will be tracke
 
 ## How to verify
 
-See [REPLICATION.md](../REPLICATION.md) for step-by-step verification of slate fingerprints, outcome data, and enrichment calculations.
+See [REPLICATION.md](../docs/REPLICATION.md) for step-by-step verification of slate fingerprints, outcome data, and enrichment calculations.
 
 ## Detailed case study
 
-See [ALS walkthrough](../examples/ALS_slate_walkthrough.md) for a full, honest analysis of what the model predicted for ALS, what happened, and what would falsify the predictions.
+See [ALS walkthrough](../docs/examples/ALS_slate_walkthrough.md) for a full, honest analysis of what the model predicted for ALS, what happened, and what would falsify the predictions.
 
 ---
 
 *Model: LightGBM Ranker (LambdaRank), 1,039 features, LOO Hit@50 = 0.2525*
 *Data sources: ChEMBL, OpenTargets, STRING, ClinicalTrials.gov, FDA, DrugCentral, BindingDB*
-*Methodology: [SYSTEM.md](../SYSTEM.md) | Metrics: [METRICS.md](../METRICS.md) | Outcome definitions: [OUTCOME_TAXONOMY.md](../OUTCOME_TAXONOMY.md)*
+*Methodology: [SYSTEM.md](../docs/SYSTEM.md) | Metrics: [METRICS.md](../docs/METRICS.md) | Outcome definitions: [OUTCOME_TAXONOMY.md](../docs/OUTCOME_TAXONOMY.md)*

@@ -10,7 +10,7 @@ This is the document that accumulates evidence over time. Everything else explai
 
 | Slate | Frozen | Diseases | Predictions | Model |
 |-------|--------|----------|-------------|-------|
-| [Q1 2026 Cross-Disease](releases/2026_Q1_cross_disease_slate.md) | 2026-02-09 | 7 | 350 | v5 |
+| [Q1 2026 Cross-Disease](../releases/2026_Q1_cross_disease_slate.md) | 2026-02-09 | 7 | 350 | v5 |
 
 ---
 
