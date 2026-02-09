@@ -11,10 +11,11 @@
       --bg: #0b1220;
       --card: #121b2f;
       --text: #e6edf7;
-      --muted: #a9b6cc;
+      --muted: #bcc9dc;
       --accent: #58a6ff;
       --border: #2b3a55;
       --ok: #3fb950;
+      --shadow: rgba(0, 0, 0, 0.22);
     }
     @media (prefers-color-scheme: light) {
       :root {
@@ -25,6 +26,7 @@
         --accent: #0b63d1;
         --border: #d7e0ef;
         --ok: #1b7f3b;
+        --shadow: rgba(12, 30, 66, 0.08);
       }
     }
     * { box-sizing: border-box; }
@@ -45,6 +47,13 @@
       align-items: center;
       gap: 12px;
       margin-bottom: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--bg) 86%, transparent);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+      padding: 10px 2px;
     }
     .brand {
       font-weight: 700;
@@ -66,7 +75,8 @@
       background: linear-gradient(160deg, color-mix(in srgb, var(--card) 90%, var(--accent) 10%), var(--card));
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 24px var(--shadow);
     }
     .actions {
       display: flex;
@@ -82,10 +92,18 @@
       background: color-mix(in srgb, var(--card) 88%, var(--accent) 12%);
       color: var(--text);
       font-weight: 600;
+      transition: background .14s ease, border-color .14s ease, transform .14s ease;
     }
     .btn.primary {
       border-color: color-mix(in srgb, var(--accent) 65%, var(--border) 35%);
       background: color-mix(in srgb, var(--accent) 24%, var(--card) 76%);
+    }
+    .btn:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+    .btn.secondary {
+      background: color-mix(in srgb, var(--card) 94%, var(--accent) 6%);
     }
     .kpis {
       display: grid;
@@ -101,18 +119,33 @@
     }
     .kpi .label { display: block; font-size: 12px; color: var(--muted); }
     .kpi .value { display: block; font-size: 22px; font-weight: 700; margin-top: 4px; }
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .trust-item {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: var(--muted);
+      background: color-mix(in srgb, var(--card) 95%, var(--accent) 5%);
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 12px;
-      margin-top: 12px;
+      margin-top: 14px;
     }
     .card {
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 14px;
+      padding: 16px;
       background: var(--card);
       transition: transform .12s ease, border-color .12s ease;
+      box-shadow: 0 8px 18px var(--shadow);
     }
     .card:hover {
       transform: translateY(-1px);
@@ -156,8 +189,26 @@
       padding: 8px 6px;
       vertical-align: top;
     }
+    th {
+      position: sticky;
+      top: 0;
+      background: var(--card);
+      z-index: 1;
+    }
     tbody tr:hover { background: color-mix(in srgb, var(--card) 92%, var(--accent) 8%); }
     th { color: var(--muted); font-weight: 600; }
+    .th-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    .th-btn .arrow { font-size: 11px; opacity: 0.75; }
     .small { font-size: 13px; color: var(--muted); }
     .chip-row {
       display: flex;
@@ -177,6 +228,19 @@
     .chip.active {
       border-color: color-mix(in srgb, var(--accent) 65%, var(--border) 35%);
       background: color-mix(in srgb, var(--accent) 22%, var(--card) 78%);
+    }
+    .summary-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .summary-badge {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: var(--muted);
     }
     ul { margin: 8px 0 0 18px; padding: 0; }
     li { margin: 6px 0; color: var(--muted); }
@@ -224,14 +288,20 @@
       </p>
       <div class="actions">
         <a class="btn primary" href="docs/SCOREBOARD.md">View scoreboard</a>
-        <a class="btn" href="slates/2026-Q1/">Browse Q1 slate</a>
-        <a class="btn" href="drafts/01_introducing_hypothesis_registry.md">Read intro</a>
+        <a class="btn secondary" href="slates/2026-Q1/">Browse Q1 slate</a>
+        <a class="btn secondary" href="drafts/01_introducing_hypothesis_registry.md">Read intro</a>
       </div>
       <div class="kpis">
         <div class="kpi"><span class="label">Frozen</span><span class="value">2026-02-09</span></div>
         <div class="kpi"><span class="label">Diseases</span><span class="value">7</span></div>
         <div class="kpi"><span class="label">Predictions</span><span class="value">350</span></div>
         <div class="kpi"><span class="label">High-tier enrichment</span><span class="value">1.70x</span></div>
+      </div>
+      <div class="trust-strip">
+        <span class="trust-item">Frozen predictions</span>
+        <span class="trust-item">Falsification criteria</span>
+        <span class="trust-item">Quarterly updates</span>
+        <span class="trust-item">Misses published</span>
       </div>
     </section>
 
@@ -306,6 +376,7 @@
         </div>
       </div>
       <p id="querySummary" class="small">Loading query dataset...</p>
+      <div id="queryBadges" class="summary-badges"></div>
       <div id="predictionsWrap"></div>
       <div id="outcomesWrap"></div>
     </div>
@@ -357,10 +428,13 @@
     const clearFiltersBtn = document.getElementById("clearFiltersBtn");
     const diseaseChips = document.getElementById("diseaseChips");
     const querySummary = document.getElementById("querySummary");
+    const queryBadges = document.getElementById("queryBadges");
     const predictionsWrap = document.getElementById("predictionsWrap");
     const outcomesWrap = document.getElementById("outcomesWrap");
 
     let queryData = null;
+    let sortKey = "rank";
+    let sortDir = "asc";
 
     function escapeHtml(value) {
       return String(value ?? "")
@@ -371,12 +445,34 @@
         .replaceAll("'", "&#039;");
     }
 
+    function sortPredictions(predictions) {
+      const sorted = [...predictions].sort((a, b) => {
+        const av = a[sortKey];
+        const bv = b[sortKey];
+        if (sortKey === "rank" || sortKey === "score") {
+          const an = Number(av ?? Number.POSITIVE_INFINITY);
+          const bn = Number(bv ?? Number.POSITIVE_INFINITY);
+          return an - bn;
+        }
+        return String(av ?? "").localeCompare(String(bv ?? ""));
+      });
+      return sortDir === "asc" ? sorted : sorted.reverse();
+    }
+
+    function sortArrowFor(key) {
+      if (sortKey !== key) return "";
+      return sortDir === "asc" ? "▲" : "▼";
+    }
+
     function renderPredictions(predictions) {
       if (!predictions.length) {
-        predictionsWrap.innerHTML = "<p class=\"small\">No predictions match this filter.</p>";
+        predictionsWrap.innerHTML =
+          "<p class=\"small\">No predictions match current filters. " +
+          "<button class=\"btn secondary\" type=\"button\" data-action=\"clear-filters\">Clear filters</button></p>";
         return;
       }
-      const rows = predictions.slice(0, 50).map((p) =>
+      const sortedPredictions = sortPredictions(predictions);
+      const rows = sortedPredictions.slice(0, 50).map((p) =>
         "<tr>" +
         "<td>" + escapeHtml(p.rank) + "</td>" +
         "<td>" + escapeHtml(p.drug_name) + "</td>" +
@@ -387,7 +483,12 @@
 
       predictionsWrap.innerHTML =
         "<h3>Predictions (top 50 shown)</h3>" +
-        "<div class=\"table-wrap\"><table><thead><tr><th>Rank</th><th>Drug</th><th>Score</th><th>Tier</th></tr></thead><tbody>" +
+        "<div class=\"table-wrap\"><table><thead><tr>" +
+        "<th><button class=\"th-btn\" data-sort-key=\"rank\" type=\"button\">Rank <span class=\"arrow\">" + sortArrowFor("rank") + "</span></button></th>" +
+        "<th><button class=\"th-btn\" data-sort-key=\"drug_name\" type=\"button\">Drug <span class=\"arrow\">" + sortArrowFor("drug_name") + "</span></button></th>" +
+        "<th><button class=\"th-btn\" data-sort-key=\"score\" type=\"button\">Score <span class=\"arrow\">" + sortArrowFor("score") + "</span></button></th>" +
+        "<th><button class=\"th-btn\" data-sort-key=\"tier\" type=\"button\">Tier <span class=\"arrow\">" + sortArrowFor("tier") + "</span></button></th>" +
+        "</tr></thead><tbody>" +
         rows +
         "</tbody></table></div>";
     }
@@ -427,6 +528,8 @@
       const diseaseKey = diseaseSelect.value;
       const textFilter = drugFilter.value.trim().toLowerCase();
       const tier = tierFilter.value;
+      const diseaseMeta = queryData.diseases.find((d) => d.key === diseaseKey);
+      const diseaseLabel = diseaseMeta ? diseaseMeta.label : diseaseKey;
 
       const allPredictions = queryData.predictions_by_disease[diseaseKey] || [];
       const filteredPredictions = allPredictions.filter((p) => {
@@ -438,7 +541,13 @@
 
       querySummary.textContent =
         "Showing " + filteredPredictions.length + " of " + allPredictions.length +
-        " predictions and " + outcomes.length + " outcomes for selected disease.";
+        " predictions and " + outcomes.length + " outcomes for " + diseaseLabel + ".";
+
+      queryBadges.innerHTML =
+        "<span class=\"summary-badge\">Disease: " + escapeHtml(diseaseLabel) + "</span>" +
+        "<span class=\"summary-badge\">Predictions: " + escapeHtml(filteredPredictions.length) + "</span>" +
+        "<span class=\"summary-badge\">Outcomes: " + escapeHtml(outcomes.length) + "</span>" +
+        "<span class=\"summary-badge\">Sort: " + escapeHtml(sortKey) + " (" + escapeHtml(sortDir) + ")</span>";
 
       renderDiseaseChips();
       renderPredictions(filteredPredictions);
@@ -474,6 +583,27 @@
       if (!target) return;
       diseaseSelect.value = target.getAttribute("data-disease");
       renderQuery();
+    });
+    predictionsWrap.addEventListener("click", (event) => {
+      const sortTarget = event.target.closest("[data-sort-key]");
+      if (sortTarget) {
+        const key = sortTarget.getAttribute("data-sort-key");
+        if (sortKey === key) {
+          sortDir = sortDir === "asc" ? "desc" : "asc";
+        } else {
+          sortKey = key;
+          sortDir = key === "rank" || key === "score" ? "asc" : "desc";
+        }
+        renderQuery();
+        return;
+      }
+
+      const actionTarget = event.target.closest("[data-action='clear-filters']");
+      if (actionTarget) {
+        drugFilter.value = "";
+        tierFilter.value = "";
+        renderQuery();
+      }
     });
   </script>
 </body>
