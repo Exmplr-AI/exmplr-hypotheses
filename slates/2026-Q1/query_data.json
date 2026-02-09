@@ -1,0 +1,3143 @@
+{
+  "slate_id": "469bb270-a423-4929-96bd-6eaadeb7986b",
+  "generated_from": {
+    "registry_path": "slates/2026-Q1/registry.parquet",
+    "outcomes_path": "slates/2026-Q1/outcomes.parquet"
+  },
+  "diseases": [
+    {
+      "key": "amyotrophic lateral sclerosis",
+      "label": "amyotrophic lateral sclerosis",
+      "prediction_count": 50,
+      "outcome_count": 2
+    },
+    {
+      "key": "glioblastoma",
+      "label": "Glioblastoma",
+      "prediction_count": 50,
+      "outcome_count": 80
+    },
+    {
+      "key": "idiopathic pulmonary fibrosis",
+      "label": "Idiopathic pulmonary fibrosis",
+      "prediction_count": 50,
+      "outcome_count": 0
+    },
+    {
+      "key": "systemic lupus erythematosus",
+      "label": "Systemic lupus erythematosus",
+      "prediction_count": 50,
+      "outcome_count": 2
+    },
+    {
+      "key": "triple negative breast cancer",
+      "label": "triple negative breast cancer",
+      "prediction_count": 50,
+      "outcome_count": 10
+    },
+    {
+      "key": "type 2 diabetes",
+      "label": "type 2 diabetes",
+      "prediction_count": 50,
+      "outcome_count": 6
+    },
+    {
+      "key": "ulcerative colitis",
+      "label": "Ulcerative colitis",
+      "prediction_count": 50,
+      "outcome_count": 2
+    }
+  ],
+  "predictions_by_disease": {
+    "glioblastoma": [
+      {
+        "drug_name": "AMMONIUM LACTATE",
+        "score": 0.9909,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "AMMONIUM LACTATE enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "LEFLUNOMIDE",
+        "score": 0.9888,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "LEFLUNOMIDE enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "zanubrutinib",
+        "score": 0.9888,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "zanubrutinib enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DOCETAXEL",
+        "score": 0.9862,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "DOCETAXEL enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "PEMETREXED DISODIUM",
+        "score": 0.9854,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "PEMETREXED DISODIUM enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DUVELISIB",
+        "score": 0.9828,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "DUVELISIB enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "LEUCOVORIN CALCIUM",
+        "score": 0.9807,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "LEUCOVORIN CALCIUM enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "CP-724714",
+        "score": 0.9793,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "CP-724714 enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "EPIRUBICIN",
+        "score": 0.9756,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "EPIRUBICIN enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "IMATINIB",
+        "score": 0.9749,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "IMATINIB enters Phase 2+ trial for Glioblastoma within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DOXORUBICIN HYDROCHLORIDE",
+        "score": 0.9729,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "DOXORUBICIN HYDROCHLORIDE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "score": 0.9709,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "SORAFENIB TOSYLATE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "Alpelisib",
+        "score": 0.9685,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "Alpelisib enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "SELUMETINIB",
+        "score": 0.9648,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "SELUMETINIB enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "Colchicine",
+        "score": 0.9643,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "Colchicine enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "Digoxin",
+        "score": 0.9635,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "Digoxin enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "score": 0.9629,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "TAMOXIFEN CITRATE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "DOVITINIB",
+        "score": 0.9605,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "DOVITINIB enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "score": 0.9595,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "IRINOTECAN HYDROCHLORIDE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "PEMETREXED MONOHYDRATE",
+        "score": 0.9554,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "PEMETREXED MONOHYDRATE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "TESETAXEL",
+        "score": 0.9546,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "TESETAXEL enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "RAMUCIRUMAB",
+        "score": 0.9526,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "RAMUCIRUMAB enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "tepotinib",
+        "score": 0.9525,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "tepotinib enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "entrectinib",
+        "score": 0.952,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "entrectinib enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "RIBAVIRIN",
+        "score": 0.9514,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "RIBAVIRIN enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "midostaurin",
+        "score": 0.9488,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "midostaurin enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "tucatinib",
+        "score": 0.9451,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "tucatinib enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "TEPOTINIB HYDROCHLORIDE",
+        "score": 0.9396,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "TEPOTINIB HYDROCHLORIDE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "BUSULFAN",
+        "score": 0.9367,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "BUSULFAN enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "EPIRUBICIN HYDROCHLORIDE",
+        "score": 0.9277,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "EPIRUBICIN HYDROCHLORIDE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "ABT 737",
+        "score": 0.9254,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "ABT 737 enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "HEXACHLOROPHENE",
+        "score": 0.9228,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "HEXACHLOROPHENE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "OSI-632",
+        "score": 0.9227,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "OSI-632 enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "TOVORAFENIB",
+        "score": 0.9197,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "TOVORAFENIB enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "score": 0.9168,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "SUNITINIB MALATE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "PEMETREXED TROMETHAMINE",
+        "score": 0.9158,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "PEMETREXED TROMETHAMINE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "PINDOLOL",
+        "score": 0.9147,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "PINDOLOL enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "MECHLORETHAMINE HYDROCHLORIDE",
+        "score": 0.9141,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "MECHLORETHAMINE HYDROCHLORIDE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "MITOXANTRONE HYDROCHLORIDE",
+        "score": 0.9135,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "MITOXANTRONE HYDROCHLORIDE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "PIRTOBRUTINIB",
+        "score": 0.908,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "PIRTOBRUTINIB enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "Thioguanine",
+        "score": 0.8994,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "Thioguanine enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "Azathioprine",
+        "score": 0.8948,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "Azathioprine enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "DACARBAZINE",
+        "score": 0.8891,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "DACARBAZINE enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "Prochlorperazine",
+        "score": 0.889,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "Prochlorperazine enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "DACTINOMYCIN",
+        "score": 0.8862,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "DACTINOMYCIN enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "score": 0.8839,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "SUNITINIB MALATE enters Phase 1+ trial for glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "LEVOLEUCOVORIN",
+        "score": 0.8802,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "LEVOLEUCOVORIN enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "DOCETAXEL ANHYDROUS",
+        "score": 0.8725,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "DOCETAXEL ANHYDROUS enters Phase 1+ trial for Glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "score": 0.8706,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "SORAFENIB TOSYLATE enters Phase 1+ trial for glioblastoma within 5 years"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "score": 0.8696,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "IRINOTECAN HYDROCHLORIDE enters Phase 1+ trial for glioblastoma within 5 years"
+      }
+    ],
+    "idiopathic pulmonary fibrosis": [
+      {
+        "drug_name": "BUDESONIDE",
+        "score": 0.9385,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "BUDESONIDE enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "PILOCARPINE HYDROCHLORIDE",
+        "score": 0.93,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "PILOCARPINE HYDROCHLORIDE enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "OXALIPLATIN",
+        "score": 0.9195,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "OXALIPLATIN enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "IFOSFAMIDE",
+        "score": 0.9124,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "IFOSFAMIDE enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "CISPLATIN",
+        "score": 0.9084,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "CISPLATIN enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "TEMOZOLOMIDE",
+        "score": 0.9027,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "TEMOZOLOMIDE enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "LEUCOVORIN",
+        "score": 0.8985,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "LEUCOVORIN enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Colchicine",
+        "score": 0.8939,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "Colchicine enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "MAGNESIUM SULFATE",
+        "score": 0.8854,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "MAGNESIUM SULFATE enters Phase 2+ trial for Idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "brexpiprazole",
+        "score": 0.882,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "brexpiprazole enters Phase 2+ trial for idiopathic pulmonary fibrosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DACARBAZINE",
+        "score": 0.8607,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "DACARBAZINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "ERLOTINIB HYDROCHLORIDE",
+        "score": 0.852,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "ERLOTINIB HYDROCHLORIDE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "BUSULFAN",
+        "score": 0.8479,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "BUSULFAN enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "DEFLAZACORT",
+        "score": 0.832,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "DEFLAZACORT enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "deucravacitinib",
+        "score": 0.83,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "deucravacitinib enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "HYDROCORTISONE SODIUM SUCCINATE",
+        "score": 0.8277,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "HYDROCORTISONE SODIUM SUCCINATE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "CLARITHROMYCIN",
+        "score": 0.8142,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "CLARITHROMYCIN enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "Hydrocortisone",
+        "score": 0.8137,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "Hydrocortisone enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "P",
+        "score": 0.8097,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "P enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "tocilizumab",
+        "score": 0.8094,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "tocilizumab enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "FOLIC ACID",
+        "score": 0.8023,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "FOLIC ACID enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "VORICONAZOLE",
+        "score": 0.8019,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "VORICONAZOLE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "RAMUCIRUMAB",
+        "score": 0.8005,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "RAMUCIRUMAB enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "DULOXETINE",
+        "score": 0.7998,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "DULOXETINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "Gefitinib",
+        "score": 0.7833,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "Gefitinib enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "PERIFOSINE",
+        "score": 0.768,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "PERIFOSINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "Loteprednol Etabonate",
+        "score": 0.7597,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "Loteprednol Etabonate enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "FLUCONAZOLE",
+        "score": 0.7591,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "FLUCONAZOLE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "GANCICLOVIR",
+        "score": 0.7441,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "GANCICLOVIR enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "AMOXICILLIN",
+        "score": 0.7347,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "AMOXICILLIN enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "Fluocinolone Acetonide",
+        "score": 0.7317,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "Fluocinolone Acetonide enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "LURBINECTEDIN",
+        "score": 0.726,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "LURBINECTEDIN enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "SERTRALINE",
+        "score": 0.7253,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "SERTRALINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "CORTISONE ACETATE",
+        "score": 0.7186,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "CORTISONE ACETATE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "CLADRIBINE",
+        "score": 0.705,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "CLADRIBINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "Fluoxetine",
+        "score": 0.6955,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "Fluoxetine enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "pembrolizumab",
+        "score": 0.6629,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "pembrolizumab enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "BAVITUXIMAB",
+        "score": 0.6609,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "BAVITUXIMAB enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "CABOTEGRAVIR",
+        "score": 0.6571,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "CABOTEGRAVIR enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "AZELAIC ACID",
+        "score": 0.6552,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "AZELAIC ACID enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "SOFOSBUVIR",
+        "score": 0.6511,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "SOFOSBUVIR enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "PYRIMETHAMINE",
+        "score": 0.6465,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "PYRIMETHAMINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "AMINOSALICYLIC ACID",
+        "score": 0.6462,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "AMINOSALICYLIC ACID enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "PAZOPANIB",
+        "score": 0.6385,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "PAZOPANIB enters Phase 1+ trial for idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "ZIDOVUDINE",
+        "score": 0.6369,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "ZIDOVUDINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "FENTANYL",
+        "score": 0.6236,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "FENTANYL enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "DIDANOSINE",
+        "score": 0.6171,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "DIDANOSINE enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "Alpelisib",
+        "score": 0.6168,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "Alpelisib enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "binimetinib",
+        "score": 0.6163,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "binimetinib enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      },
+      {
+        "drug_name": "AMINOLEVULINIC ACID",
+        "score": 0.6155,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "AMINOLEVULINIC ACID enters Phase 1+ trial for Idiopathic pulmonary fibrosis within 5 years"
+      }
+    ],
+    "systemic lupus erythematosus": [
+      {
+        "drug_name": "METHOTREXATE SODIUM",
+        "score": 0.9883,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "METHOTREXATE SODIUM enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "entrectinib",
+        "score": 0.9868,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "entrectinib enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DEXAMETHASONE ACETATE",
+        "score": 0.9864,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "DEXAMETHASONE ACETATE enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "prednisolone acetate",
+        "score": 0.9847,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "prednisolone acetate enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "ITACITINIB",
+        "score": 0.9845,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "ITACITINIB enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "pembrolizumab",
+        "score": 0.9833,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "pembrolizumab enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "brigatinib",
+        "score": 0.9829,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "brigatinib enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "BUDESONIDE",
+        "score": 0.982,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "BUDESONIDE enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "PREDNISOLONE SODIUM PHOSPHATE",
+        "score": 0.9806,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "PREDNISOLONE SODIUM PHOSPHATE enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "ERLOTINIB",
+        "score": 0.9785,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "ERLOTINIB enters Phase 2+ trial for Systemic lupus erythematosus within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "CARBOPLATIN",
+        "score": 0.9776,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "CARBOPLATIN enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "nintedanib",
+        "score": 0.9769,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "nintedanib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "Gefitinib",
+        "score": 0.9764,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "Gefitinib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "REMIBRUTINIB",
+        "score": 0.9753,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "REMIBRUTINIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "FLUTICASONE FUROATE",
+        "score": 0.9738,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "FLUTICASONE FUROATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "FLUTICASONE PROPIONATE",
+        "score": 0.9705,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "FLUTICASONE PROPIONATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "CRIZOTINIB",
+        "score": 0.9701,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "CRIZOTINIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "ABEMACICLIB",
+        "score": 0.9695,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "ABEMACICLIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "LEUCOVORIN CALCIUM",
+        "score": 0.9667,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "LEUCOVORIN CALCIUM enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "ERLOTINIB HYDROCHLORIDE",
+        "score": 0.9661,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "ERLOTINIB HYDROCHLORIDE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "PREDNISOLONE TEBUTATE",
+        "score": 0.9649,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "PREDNISOLONE TEBUTATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "PELITINIB",
+        "score": 0.964,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "PELITINIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "ATORVASTATIN CALCIUM",
+        "score": 0.9637,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "ATORVASTATIN CALCIUM enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "score": 0.959,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "TAMOXIFEN CITRATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "Sulfasalazine",
+        "score": 0.9588,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "Sulfasalazine enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "DEXAMETHASONE PHOSPHORIC ACID",
+        "score": 0.958,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "DEXAMETHASONE PHOSPHORIC ACID enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "PREDNISOLONE PHOSPHORIC ACID",
+        "score": 0.9576,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "PREDNISOLONE PHOSPHORIC ACID enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "nilotinib",
+        "score": 0.9576,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "nilotinib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "RIBAVIRIN",
+        "score": 0.9559,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "RIBAVIRIN enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "BORTEZOMIB",
+        "score": 0.955,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "BORTEZOMIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "peginterferon beta-1a",
+        "score": 0.9549,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "peginterferon beta-1a enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "DABRAFENIB MESYLATE",
+        "score": 0.9441,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "DABRAFENIB MESYLATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "POVORCITINIB",
+        "score": 0.9364,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "POVORCITINIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "ibrutinib",
+        "score": 0.9354,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "ibrutinib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "IBUPROFEN",
+        "score": 0.9304,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "IBUPROFEN enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "LEUCOVORIN",
+        "score": 0.9278,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "LEUCOVORIN enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "score": 0.9233,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "IRINOTECAN HYDROCHLORIDE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "DORAMAPIMOD",
+        "score": 0.9214,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "DORAMAPIMOD enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "PALBOCICLIB",
+        "score": 0.921,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "PALBOCICLIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "rebastinib",
+        "score": 0.92,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "rebastinib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "zanubrutinib",
+        "score": 0.9195,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "zanubrutinib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "METHYLPREDNISOLONE ACETATE",
+        "score": 0.918,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "METHYLPREDNISOLONE ACETATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "DABRAFENIB",
+        "score": 0.9175,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "DABRAFENIB enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "Alpelisib",
+        "score": 0.9147,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "Alpelisib enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "GLATIRAMER ACETATE",
+        "score": 0.9116,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "GLATIRAMER ACETATE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "NITAZOXANIDE",
+        "score": 0.9082,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "NITAZOXANIDE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "MYCOPHENOLATE MOFETIL HYDROCHLORIDE",
+        "score": 0.8999,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "MYCOPHENOLATE MOFETIL HYDROCHLORIDE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "NAPROXEN",
+        "score": 0.8954,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "NAPROXEN enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "CETIRIZINE",
+        "score": 0.8885,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "CETIRIZINE enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      },
+      {
+        "drug_name": "CISPLATIN",
+        "score": 0.8864,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "CISPLATIN enters Phase 1+ trial for Systemic lupus erythematosus within 5 years"
+      }
+    ],
+    "type 2 diabetes": [
+      {
+        "drug_name": "LAPATINIB",
+        "score": 0.9886,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "LAPATINIB enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "linifanib",
+        "score": 0.9799,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "linifanib enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "KW-2449",
+        "score": 0.9773,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "KW-2449 enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "SU-014813",
+        "score": 0.9671,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "SU-014813 enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "AST-487",
+        "score": 0.9646,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "AST-487 enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "BROMOCRIPTINE MESYLATE",
+        "score": 0.9595,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "BROMOCRIPTINE MESYLATE enters Phase 2+ trial for type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "entrectinib",
+        "score": 0.9577,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "entrectinib enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Chlorthalidone",
+        "score": 0.9569,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "Chlorthalidone enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "score": 0.9565,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "SUNITINIB MALATE enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DORAMAPIMOD",
+        "score": 0.9549,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "DORAMAPIMOD enters Phase 2+ trial for Type 2 diabetes within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "PELITINIB",
+        "score": 0.9548,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "PELITINIB enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "FELODIPINE",
+        "score": 0.9517,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "FELODIPINE enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "TACROLIMUS ANHYDROUS",
+        "score": 0.9511,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "TACROLIMUS ANHYDROUS enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "QUETIAPINE",
+        "score": 0.9509,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "QUETIAPINE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "SUNITINIB",
+        "score": 0.948,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "SUNITINIB enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "AMLODIPINE MALEATE",
+        "score": 0.9473,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "AMLODIPINE MALEATE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Clozapine",
+        "score": 0.9466,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "Clozapine enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "HEXACHLOROPHENE",
+        "score": 0.9454,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "HEXACHLOROPHENE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "CANDESARTAN CILEXETIL",
+        "score": 0.9453,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "CANDESARTAN CILEXETIL enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "brigatinib",
+        "score": 0.9452,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "brigatinib enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "PAROXETINE",
+        "score": 0.9444,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "PAROXETINE enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "ARIPIPRAZOLE LAUROXIL",
+        "score": 0.9444,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "ARIPIPRAZOLE LAUROXIL enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "OLMUTINIB",
+        "score": 0.9412,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "OLMUTINIB enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "DOXAZOSIN MESYLATE",
+        "score": 0.9408,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "DOXAZOSIN MESYLATE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Celecoxib",
+        "score": 0.9382,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "Celecoxib enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Imatinib Mesylate",
+        "score": 0.9367,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "Imatinib Mesylate enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "OLANZAPINE",
+        "score": 0.936,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "OLANZAPINE enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "AMLODIPINE BENZOATE",
+        "score": 0.935,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "AMLODIPINE BENZOATE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "OMEPRAZOLE",
+        "score": 0.9344,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "OMEPRAZOLE enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Risperidone",
+        "score": 0.9322,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "Risperidone enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "CRIZOTINIB",
+        "score": 0.9294,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "CRIZOTINIB enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "DILTIAZEM MALATE",
+        "score": 0.9278,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "DILTIAZEM MALATE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "TICAGRELOR",
+        "score": 0.9268,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "TICAGRELOR enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "OLANZAPINE",
+        "score": 0.9266,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "OLANZAPINE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Quetiapine Fumarate",
+        "score": 0.9259,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "Quetiapine Fumarate enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "DILTIAZEM HYDROCHLORIDE",
+        "score": 0.9252,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "DILTIAZEM HYDROCHLORIDE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "EFAVIRENZ",
+        "score": 0.9245,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "EFAVIRENZ enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Gemfibrozil",
+        "score": 0.9234,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "Gemfibrozil enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "ETRIPAMIL",
+        "score": 0.9227,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "ETRIPAMIL enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "fedratinib",
+        "score": 0.9219,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "fedratinib enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "OSI-632",
+        "score": 0.9212,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "OSI-632 enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "ALOGLIPTIN BENZOATE",
+        "score": 0.9197,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "ALOGLIPTIN BENZOATE enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "EBASTINE",
+        "score": 0.9188,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "EBASTINE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "AMIODARONE",
+        "score": 0.9187,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "AMIODARONE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "HYDROXYZINE",
+        "score": 0.9159,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "HYDROXYZINE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Sulfasalazine",
+        "score": 0.9151,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "Sulfasalazine enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "PRAZOSIN HYDROCHLORIDE",
+        "score": 0.9127,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "PRAZOSIN HYDROCHLORIDE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "Lansoprazole",
+        "score": 0.9116,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "Lansoprazole enters Phase 1+ trial for type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "deucravacitinib",
+        "score": 0.9103,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "deucravacitinib enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      },
+      {
+        "drug_name": "RALOXIFENE",
+        "score": 0.903,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "RALOXIFENE enters Phase 1+ trial for Type 2 diabetes within 5 years"
+      }
+    ],
+    "ulcerative colitis": [
+      {
+        "drug_name": "GOLIDOCITINIB",
+        "score": 0.9914,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "GOLIDOCITINIB enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "METHOTREXATE SODIUM",
+        "score": 0.9914,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "METHOTREXATE SODIUM enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "LOMEDEUCITINIB",
+        "score": 0.9911,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "LOMEDEUCITINIB enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "FLUTICASONE FUROATE",
+        "score": 0.9889,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "FLUTICASONE FUROATE enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "entrectinib",
+        "score": 0.9866,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "entrectinib enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "abrocitinib",
+        "score": 0.9865,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "abrocitinib enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Diclofenac",
+        "score": 0.9851,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "Diclofenac enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "FLUTICASONE PROPIONATE",
+        "score": 0.985,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "FLUTICASONE PROPIONATE enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "MYCOPHENOLATE MOFETIL",
+        "score": 0.9834,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "MYCOPHENOLATE MOFETIL enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "INFLUENZA VIRUS VACCINE",
+        "score": 0.9832,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "INFLUENZA VIRUS VACCINE enters Phase 2+ trial for Ulcerative colitis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Imatinib Mesylate",
+        "score": 0.9795,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "Imatinib Mesylate enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Atorvastatin",
+        "score": 0.9791,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "Atorvastatin enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "TRIAMCINOLONE",
+        "score": 0.9763,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "TRIAMCINOLONE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "GANCICLOVIR",
+        "score": 0.9743,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "GANCICLOVIR enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Digoxin",
+        "score": 0.9738,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "Digoxin enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "POVORCITINIB",
+        "score": 0.9729,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "POVORCITINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "CRIZOTINIB",
+        "score": 0.9721,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "CRIZOTINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "PYRAZINAMIDE",
+        "score": 0.9714,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "PYRAZINAMIDE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "score": 0.9712,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "SORAFENIB TOSYLATE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Celecoxib",
+        "score": 0.97,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "Celecoxib enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "LEUCOVORIN",
+        "score": 0.9665,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "LEUCOVORIN enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "pembrolizumab",
+        "score": 0.9664,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "pembrolizumab enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "DEURUXOLITINIB",
+        "score": 0.9622,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "DEURUXOLITINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "brigatinib",
+        "score": 0.9607,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "brigatinib enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "FLUOROURACIL",
+        "score": 0.9607,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "FLUOROURACIL enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "GLATIRAMER ACETATE",
+        "score": 0.959,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "GLATIRAMER ACETATE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "ISONIAZID",
+        "score": 0.9585,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "ISONIAZID enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Gefitinib",
+        "score": 0.9575,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "Gefitinib enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "prednisolone acetate",
+        "score": 0.9561,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "prednisolone acetate enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "DAPSONE",
+        "score": 0.9545,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "DAPSONE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Piroxicam",
+        "score": 0.9538,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "Piroxicam enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Paclitaxel",
+        "score": 0.9531,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "Paclitaxel enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "ROVADICITINIB",
+        "score": 0.9519,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "ROVADICITINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "EFAVIRENZ",
+        "score": 0.9517,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "EFAVIRENZ enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "IBUPROFEN",
+        "score": 0.9482,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "IBUPROFEN enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "PAZOPANIB HYDROCHLORIDE",
+        "score": 0.9456,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "PAZOPANIB HYDROCHLORIDE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "Ketorolac Tromethamine",
+        "score": 0.9411,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "Ketorolac Tromethamine enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "GUSACITINIB HYDROCHLORIDE",
+        "score": 0.9396,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "GUSACITINIB HYDROCHLORIDE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "MOMELOTINIB DIHYDROCHLORIDE",
+        "score": 0.9375,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "MOMELOTINIB DIHYDROCHLORIDE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "PUMECITINIB",
+        "score": 0.933,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "PUMECITINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "ABEMACICLIB",
+        "score": 0.9284,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "ABEMACICLIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "KETOROLAC",
+        "score": 0.9281,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "KETOROLAC enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "ITACITINIB ADIPATE",
+        "score": 0.9269,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "ITACITINIB ADIPATE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "DICLOFENAC POTASSIUM",
+        "score": 0.9244,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "DICLOFENAC POTASSIUM enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "LAPATINIB DITOSYLATE",
+        "score": 0.9223,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "LAPATINIB DITOSYLATE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "IFIDANCITINIB",
+        "score": 0.9219,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "IFIDANCITINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "NICARDIPINE HYDROCHLORIDE",
+        "score": 0.9141,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "NICARDIPINE HYDROCHLORIDE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "TRIMETHOPRIM",
+        "score": 0.9116,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "TRIMETHOPRIM enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "ERLOTINIB HYDROCHLORIDE",
+        "score": 0.911,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "ERLOTINIB HYDROCHLORIDE enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      },
+      {
+        "drug_name": "IMATINIB",
+        "score": 0.911,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "IMATINIB enters Phase 1+ trial for Ulcerative colitis within 5 years"
+      }
+    ],
+    "amyotrophic lateral sclerosis": [
+      {
+        "drug_name": "Lidocaine",
+        "score": 0.9713,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "Lidocaine enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Zonisamide",
+        "score": 0.9648,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "Zonisamide enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "KETOCONAZOLE",
+        "score": 0.9606,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "KETOCONAZOLE enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Haloperidol",
+        "score": 0.9431,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "Haloperidol enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Risperidone",
+        "score": 0.8918,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "Risperidone enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Quetiapine Fumarate",
+        "score": 0.8554,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "Quetiapine Fumarate enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "PHENYTOIN",
+        "score": 0.842,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "PHENYTOIN enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "RUFINAMIDE",
+        "score": 0.842,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "RUFINAMIDE enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Prochlorperazine",
+        "score": 0.837,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "Prochlorperazine enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Duloxetine Hydrochloride",
+        "score": 0.8224,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "Duloxetine Hydrochloride enters Phase 2+ trial for amyotrophic lateral sclerosis within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Aripiprazole",
+        "score": 0.8218,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "Aripiprazole enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Bupivacaine",
+        "score": 0.793,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "Bupivacaine enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "TRAZODONE",
+        "score": 0.7918,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "TRAZODONE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "TRORILUZOLE",
+        "score": 0.7564,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "TRORILUZOLE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Perphenazine",
+        "score": 0.7562,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "Perphenazine enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Indomethacin",
+        "score": 0.7442,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "Indomethacin enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "LAMOTRIGINE",
+        "score": 0.7438,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "LAMOTRIGINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Diclofenac",
+        "score": 0.7359,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "Diclofenac enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Doxazosin",
+        "score": 0.7153,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "Doxazosin enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "ROPIVACAINE HYDROCHLORIDE",
+        "score": 0.7107,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "ROPIVACAINE HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "LIDOCAINE HYDROCHLORIDE",
+        "score": 0.6833,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "LIDOCAINE HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "LURASIDONE HYDROCHLORIDE",
+        "score": 0.6689,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "LURASIDONE HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "CHLORPROMAZINE",
+        "score": 0.6425,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "CHLORPROMAZINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Clozapine",
+        "score": 0.6388,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "Clozapine enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Glyburide",
+        "score": 0.6277,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "Glyburide enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "ESCITALOPRAM",
+        "score": 0.615,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "ESCITALOPRAM enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "FLECAINIDE ACETATE",
+        "score": 0.6105,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "FLECAINIDE ACETATE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "brexpiprazole",
+        "score": 0.6056,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "brexpiprazole enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "ziprasidone",
+        "score": 0.6011,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "ziprasidone enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "PALIPERIDONE",
+        "score": 0.5946,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "PALIPERIDONE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "QUETIAPINE",
+        "score": 0.5877,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "QUETIAPINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Prazosin",
+        "score": 0.5874,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "Prazosin enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "ROPIVACAINE",
+        "score": 0.5873,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "ROPIVACAINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "FENTANYL",
+        "score": 0.5572,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "FENTANYL enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "IBUPROFEN",
+        "score": 0.5571,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "IBUPROFEN enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Fluoxetine",
+        "score": 0.5555,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "Fluoxetine enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "PROCAINE HYDROCHLORIDE",
+        "score": 0.5485,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "PROCAINE HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Citalopram",
+        "score": 0.5416,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "Citalopram enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "ZIPRASIDONE HYDROCHLORIDE",
+        "score": 0.5311,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "ZIPRASIDONE HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "CRIZOTINIB",
+        "score": 0.5297,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "CRIZOTINIB enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Pantoprazole",
+        "score": 0.5261,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "Pantoprazole enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "SERTRALINE",
+        "score": 0.5232,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "SERTRALINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "KETOROLAC",
+        "score": 0.523,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "KETOROLAC enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "score": 0.5121,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "IRINOTECAN HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Alpelisib",
+        "score": 0.5045,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "Alpelisib enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "PROPARACAINE HYDROCHLORIDE",
+        "score": 0.5034,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "PROPARACAINE HYDROCHLORIDE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "PAROXETINE",
+        "score": 0.5007,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "PAROXETINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Diphenhydramine",
+        "score": 0.4867,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "Diphenhydramine enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "CARBAMAZEPINE",
+        "score": 0.4811,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "CARBAMAZEPINE enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      },
+      {
+        "drug_name": "Orphenadrine",
+        "score": 0.4669,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "Orphenadrine enters Phase 1+ trial for amyotrophic lateral sclerosis within 5 years"
+      }
+    ],
+    "triple negative breast cancer": [
+      {
+        "drug_name": "BICALUTAMIDE",
+        "score": 0.9887,
+        "rank": 1,
+        "tier": "high",
+        "falsification": "BICALUTAMIDE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "ABEMACICLIB",
+        "score": 0.9884,
+        "rank": 2,
+        "tier": "high",
+        "falsification": "ABEMACICLIB enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Alpelisib",
+        "score": 0.9778,
+        "rank": 3,
+        "tier": "high",
+        "falsification": "Alpelisib enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "PREDNISONE",
+        "score": 0.975,
+        "rank": 4,
+        "tier": "high",
+        "falsification": "PREDNISONE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "ERIBULIN MESYLATE",
+        "score": 0.9692,
+        "rank": 5,
+        "tier": "high",
+        "falsification": "ERIBULIN MESYLATE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "ERLOTINIB HYDROCHLORIDE",
+        "score": 0.9675,
+        "rank": 6,
+        "tier": "high",
+        "falsification": "ERLOTINIB HYDROCHLORIDE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "MIFEPRISTONE",
+        "score": 0.9645,
+        "rank": 7,
+        "tier": "high",
+        "falsification": "MIFEPRISTONE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "VINCRISTINE",
+        "score": 0.9521,
+        "rank": 8,
+        "tier": "high",
+        "falsification": "VINCRISTINE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "Celecoxib",
+        "score": 0.9382,
+        "rank": 9,
+        "tier": "high",
+        "falsification": "Celecoxib enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "DOXORUBICIN HYDROCHLORIDE",
+        "score": 0.935,
+        "rank": 10,
+        "tier": "high",
+        "falsification": "DOXORUBICIN HYDROCHLORIDE enters Phase 2+ trial for triple negative breast cancer within 3 years, OR receives FDA approval"
+      },
+      {
+        "drug_name": "apalutamide",
+        "score": 0.927,
+        "rank": 11,
+        "tier": "moderate",
+        "falsification": "apalutamide enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "VINCRISTINE SULFATE",
+        "score": 0.925,
+        "rank": 12,
+        "tier": "moderate",
+        "falsification": "VINCRISTINE SULFATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "DOCETAXEL ANHYDROUS",
+        "score": 0.9186,
+        "rank": 13,
+        "tier": "moderate",
+        "falsification": "DOCETAXEL ANHYDROUS enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "score": 0.9014,
+        "rank": 14,
+        "tier": "moderate",
+        "falsification": "IRINOTECAN HYDROCHLORIDE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "CRIZOTINIB",
+        "score": 0.8842,
+        "rank": 15,
+        "tier": "moderate",
+        "falsification": "CRIZOTINIB enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "PEMETREXED DISODIUM",
+        "score": 0.883,
+        "rank": 16,
+        "tier": "moderate",
+        "falsification": "PEMETREXED DISODIUM enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "ibrutinib",
+        "score": 0.8766,
+        "rank": 17,
+        "tier": "moderate",
+        "falsification": "ibrutinib enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "ESTRADIOL",
+        "score": 0.8668,
+        "rank": 18,
+        "tier": "moderate",
+        "falsification": "ESTRADIOL enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "DEXAMETHASONE ACETATE",
+        "score": 0.8648,
+        "rank": 19,
+        "tier": "moderate",
+        "falsification": "DEXAMETHASONE ACETATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Indomethacin",
+        "score": 0.8525,
+        "rank": 20,
+        "tier": "moderate",
+        "falsification": "Indomethacin enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "IXABEPILONE",
+        "score": 0.8497,
+        "rank": 21,
+        "tier": "moderate",
+        "falsification": "IXABEPILONE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "VINORELBINE TARTRATE",
+        "score": 0.8484,
+        "rank": 22,
+        "tier": "moderate",
+        "falsification": "VINORELBINE TARTRATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "GEMCITABINE HYDROCHLORIDE",
+        "score": 0.8316,
+        "rank": 23,
+        "tier": "moderate",
+        "falsification": "GEMCITABINE HYDROCHLORIDE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "cabazitaxel",
+        "score": 0.8171,
+        "rank": 24,
+        "tier": "moderate",
+        "falsification": "cabazitaxel enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Flutamide",
+        "score": 0.8107,
+        "rank": 25,
+        "tier": "moderate",
+        "falsification": "Flutamide enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "score": 0.8051,
+        "rank": 26,
+        "tier": "moderate",
+        "falsification": "TAMOXIFEN CITRATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "SELUMETINIB",
+        "score": 0.7858,
+        "rank": 27,
+        "tier": "moderate",
+        "falsification": "SELUMETINIB enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "VINBLASTINE SULFATE",
+        "score": 0.7799,
+        "rank": 28,
+        "tier": "moderate",
+        "falsification": "VINBLASTINE SULFATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "NILUTAMIDE",
+        "score": 0.75,
+        "rank": 29,
+        "tier": "moderate",
+        "falsification": "NILUTAMIDE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Gefitinib",
+        "score": 0.7136,
+        "rank": 30,
+        "tier": "moderate",
+        "falsification": "Gefitinib enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Colchicine",
+        "score": 0.7124,
+        "rank": 31,
+        "tier": "moderate",
+        "falsification": "Colchicine enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "DEXAMETHASONE SODIUM PHOSPHATE",
+        "score": 0.6983,
+        "rank": 32,
+        "tier": "moderate",
+        "falsification": "DEXAMETHASONE SODIUM PHOSPHATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "SUNITINIB",
+        "score": 0.6701,
+        "rank": 33,
+        "tier": "moderate",
+        "falsification": "SUNITINIB enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Imatinib Mesylate",
+        "score": 0.6539,
+        "rank": 34,
+        "tier": "moderate",
+        "falsification": "Imatinib Mesylate enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "RUXOLITINIB PHOSPHATE",
+        "score": 0.5938,
+        "rank": 35,
+        "tier": "moderate",
+        "falsification": "RUXOLITINIB PHOSPHATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Thalidomide",
+        "score": 0.5919,
+        "rank": 36,
+        "tier": "moderate",
+        "falsification": "Thalidomide enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "score": 0.5696,
+        "rank": 37,
+        "tier": "moderate",
+        "falsification": "SUNITINIB MALATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "LENALIDOMIDE",
+        "score": 0.5676,
+        "rank": 38,
+        "tier": "moderate",
+        "falsification": "LENALIDOMIDE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "ANASTROZOLE",
+        "score": 0.5089,
+        "rank": 39,
+        "tier": "moderate",
+        "falsification": "ANASTROZOLE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "LEVONORGESTREL",
+        "score": 0.4943,
+        "rank": 40,
+        "tier": "moderate",
+        "falsification": "LEVONORGESTREL enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "zanubrutinib",
+        "score": 0.4758,
+        "rank": 41,
+        "tier": "moderate",
+        "falsification": "zanubrutinib enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "TESTOSTERONE",
+        "score": 0.4656,
+        "rank": 42,
+        "tier": "moderate",
+        "falsification": "TESTOSTERONE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "PACLITAXEL POLIGLUMEX",
+        "score": 0.4576,
+        "rank": 43,
+        "tier": "moderate",
+        "falsification": "PACLITAXEL POLIGLUMEX enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "LEFLUNOMIDE",
+        "score": 0.4377,
+        "rank": 44,
+        "tier": "moderate",
+        "falsification": "LEFLUNOMIDE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "LAPATINIB DITOSYLATE",
+        "score": 0.4225,
+        "rank": 45,
+        "tier": "moderate",
+        "falsification": "LAPATINIB DITOSYLATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "IBUPROFEN",
+        "score": 0.4142,
+        "rank": 46,
+        "tier": "moderate",
+        "falsification": "IBUPROFEN enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "score": 0.407,
+        "rank": 47,
+        "tier": "moderate",
+        "falsification": "SORAFENIB TOSYLATE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "Aspirin",
+        "score": 0.3459,
+        "rank": 48,
+        "tier": "moderate",
+        "falsification": "Aspirin enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "METHOTREXATE SODIUM",
+        "score": 0.3369,
+        "rank": 49,
+        "tier": "moderate",
+        "falsification": "METHOTREXATE SODIUM enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      },
+      {
+        "drug_name": "PAZOPANIB HYDROCHLORIDE",
+        "score": 0.3158,
+        "rank": 50,
+        "tier": "moderate",
+        "falsification": "PAZOPANIB HYDROCHLORIDE enters Phase 1+ trial for triple negative breast cancer within 5 years"
+      }
+    ]
+  },
+  "outcomes_by_disease": {
+    "glioblastoma": [
+      {
+        "drug_name": "DOVITINIB",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "DOVITINIB",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "DOXORUBICIN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "IMATINIB",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "LEUCOVORIN CALCIUM",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "RAMUCIRUMAB",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "Thioguanine",
+        "type": "phase_advanced",
+        "date": null,
+        "source": "chembl"
+      },
+      {
+        "drug_name": "DOXORUBICIN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1994-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "type": "phase_advanced",
+        "date": "1994-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1997-09-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1997-09-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "LEFLUNOMIDE",
+        "type": "phase_advanced",
+        "date": "1998-02-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1998-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1998-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1998-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1998-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1999-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "1999-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2000-08-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2000-08-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "type": "phase_advanced",
+        "date": "2000-12-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2001-01-05",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2001-01-05",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2002-03-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2002-03-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "DOCETAXEL",
+        "type": "phase_advanced",
+        "date": "2002-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2002-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2002-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "type": "phase_advanced",
+        "date": "2003-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "Thioguanine",
+        "type": "phase_advanced",
+        "date": "2003-09-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2004-11-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2004-11-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2004-12-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2004-12-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2005-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2005-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "LEUCOVORIN CALCIUM",
+        "type": "phase_advanced",
+        "date": "2005-07-12",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2006-03-24",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2006-03-24",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2006-04-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2006-04-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "TAMOXIFEN CITRATE",
+        "type": "phase_advanced",
+        "date": "2006-12-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2007-01-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2007-01-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2007-03-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2007-03-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": "2007-03-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": "2007-03-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "DACARBAZINE",
+        "type": "phase_advanced",
+        "date": "2007-05-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": "2007-06-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SUNITINIB MALATE",
+        "type": "phase_advanced",
+        "date": "2007-06-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2007-10-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2007-10-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2008-09-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2008-09-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "RAMUCIRUMAB",
+        "type": "phase_advanced",
+        "date": "2010-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "BUSULFAN",
+        "type": "status_transition",
+        "date": "2012-08-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "DOVITINIB",
+        "type": "phase_advanced",
+        "date": "2012-12-20",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2013-04-11",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "SORAFENIB TOSYLATE",
+        "type": "phase_advanced",
+        "date": "2013-04-11",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "DOVITINIB",
+        "type": "phase_advanced",
+        "date": "2013-10-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "LEUCOVORIN CALCIUM",
+        "type": "phase_advanced",
+        "date": "2014-10-07",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "status_transition",
+        "date": "2014-12-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "status_transition",
+        "date": "2014-12-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2016-03-07",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "IRINOTECAN HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2016-03-07",
+        "source": "ctgov"
+      }
+    ],
+    "triple negative breast cancer": [
+      {
+        "drug_name": "ERLOTINIB HYDROCHLORIDE",
+        "type": "phase_advanced",
+        "date": "2009-09-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "Indomethacin",
+        "type": "phase_advanced",
+        "date": "2017-02-09",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "VINORELBINE TARTRATE",
+        "type": "phase_advanced",
+        "date": "2017-06-14",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "BICALUTAMIDE",
+        "type": "phase_advanced",
+        "date": "2018-05-07",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "CRIZOTINIB",
+        "type": "phase_advanced",
+        "date": "2019-05-09",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "ERIBULIN MESYLATE",
+        "type": "phase_advanced",
+        "date": "2020-06-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "PREDNISONE",
+        "type": "phase_advanced",
+        "date": "2021-02-10",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "ERIBULIN MESYLATE",
+        "type": "phase_advanced",
+        "date": "2021-06-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "ABEMACICLIB",
+        "type": "phase_advanced",
+        "date": "2026-01-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "LENALIDOMIDE",
+        "type": "first_trial_seen",
+        "date": "2026-06-01",
+        "source": "ctgov"
+      }
+    ],
+    "amyotrophic lateral sclerosis": [
+      {
+        "drug_name": "ESCITALOPRAM",
+        "type": "phase_advanced",
+        "date": "2009-07-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "TRAZODONE",
+        "type": "phase_advanced",
+        "date": "2020-02-27",
+        "source": "ctgov"
+      }
+    ],
+    "type 2 diabetes": [
+      {
+        "drug_name": "CANDESARTAN CILEXETIL",
+        "type": "phase_advanced",
+        "date": "2001-08-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "BROMOCRIPTINE MESYLATE",
+        "type": "phase_advanced",
+        "date": "2005-02-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "BROMOCRIPTINE MESYLATE",
+        "type": "phase_advanced",
+        "date": "2014-01-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "OMEPRAZOLE",
+        "type": "phase_advanced",
+        "date": "2015-04-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "TICAGRELOR",
+        "type": "phase_advanced",
+        "date": "2015-04-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "Celecoxib",
+        "type": "phase_advanced",
+        "date": "2025-10-10",
+        "source": "ctgov"
+      }
+    ],
+    "ulcerative colitis": [
+      {
+        "drug_name": "Atorvastatin",
+        "type": "phase_advanced",
+        "date": "2021-09-24",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "pembrolizumab",
+        "type": "phase_advanced",
+        "date": "2025-11-04",
+        "source": "ctgov"
+      }
+    ],
+    "systemic lupus erythematosus": [
+      {
+        "drug_name": "BORTEZOMIB",
+        "type": "phase_advanced",
+        "date": "2014-10-01",
+        "source": "ctgov"
+      },
+      {
+        "drug_name": "Sulfasalazine",
+        "type": "phase_advanced",
+        "date": "2024-05-06",
+        "source": "ctgov"
+      }
+    ]
+  }
+}

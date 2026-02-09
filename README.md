@@ -10,6 +10,7 @@ Quick start page: [`index.html`](index.html)
 
 A minimal public landing page is available at [`index.html`](index.html).  
 GitHub Pages deployment is automated via [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+The page includes an in-browser disease query tool backed by [`slates/2026-Q1/query_data.json`](slates/2026-Q1/query_data.json).
 
 To publish:
 1. In GitHub repository settings, set **Pages** source to **GitHub Actions**.

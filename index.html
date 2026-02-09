@@ -96,6 +96,40 @@
       padding: 14px;
       background: var(--card);
     }
+    .query-controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin: 10px 0 14px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    select, input {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 10px;
+      background: var(--card);
+      color: var(--text);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      padding: 8px 6px;
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 600; }
+    .small { font-size: 13px; color: var(--muted); }
     ul { margin: 8px 0 0 18px; padding: 0; }
     li { margin: 6px 0; color: var(--muted); }
     .pill {
@@ -189,6 +223,33 @@
       </article>
     </div>
 
+    <h2>Query diseases</h2>
+    <div class="card">
+      <p class="small">Select a disease to inspect frozen predictions and tracked outcomes from slate <code>469bb270-a423-4929-96bd-6eaadeb7986b</code>.</p>
+      <div class="query-controls">
+        <div>
+          <label for="diseaseSelect">Disease</label>
+          <select id="diseaseSelect"></select>
+        </div>
+        <div>
+          <label for="drugFilter">Filter by drug name</label>
+          <input id="drugFilter" type="text" placeholder="e.g., trazodone">
+        </div>
+        <div>
+          <label for="tierFilter">Confidence tier</label>
+          <select id="tierFilter">
+            <option value="">All tiers</option>
+            <option value="high">High</option>
+            <option value="moderate">Moderate</option>
+            <option value="exploratory">Exploratory</option>
+          </select>
+        </div>
+      </div>
+      <p id="querySummary" class="small">Loading query dataset...</p>
+      <div id="predictionsWrap"></div>
+      <div id="outcomesWrap"></div>
+    </div>
+
     <h2>Read the evidence</h2>
     <div class="grid">
       <article class="card">
@@ -206,6 +267,7 @@
         <ul>
           <li><a href="slates/2026-Q1/registry.parquet">registry.parquet</a></li>
           <li><a href="slates/2026-Q1/outcomes.parquet">outcomes.parquet</a></li>
+          <li><a href="slates/2026-Q1/query_data.json">query_data.json</a></li>
           <li><a href="slates/2026-Q1/slates.json">slates.json</a></li>
         </ul>
       </article>
@@ -228,5 +290,108 @@
       For full methods and constraints, start with <a href="docs/SYSTEM.md">SYSTEM.md</a> and <a href="docs/REPLICATION.md">REPLICATION.md</a>.
     </footer>
   </main>
+  <script>
+    const diseaseSelect = document.getElementById("diseaseSelect");
+    const drugFilter = document.getElementById("drugFilter");
+    const tierFilter = document.getElementById("tierFilter");
+    const querySummary = document.getElementById("querySummary");
+    const predictionsWrap = document.getElementById("predictionsWrap");
+    const outcomesWrap = document.getElementById("outcomesWrap");
+
+    let queryData = null;
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderPredictions(predictions) {
+      if (!predictions.length) {
+        predictionsWrap.innerHTML = "<p class=\"small\">No predictions match this filter.</p>";
+        return;
+      }
+      const rows = predictions.slice(0, 50).map((p) =>
+        "<tr>" +
+        "<td>" + escapeHtml(p.rank) + "</td>" +
+        "<td>" + escapeHtml(p.drug_name) + "</td>" +
+        "<td>" + escapeHtml(p.score) + "</td>" +
+        "<td>" + escapeHtml(p.tier) + "</td>" +
+        "</tr>"
+      ).join("");
+
+      predictionsWrap.innerHTML =
+        "<h3>Predictions (top 50 shown)</h3>" +
+        "<table><thead><tr><th>Rank</th><th>Drug</th><th>Score</th><th>Tier</th></tr></thead><tbody>" +
+        rows +
+        "</tbody></table>";
+    }
+
+    function renderOutcomes(outcomes) {
+      if (!outcomes.length) {
+        outcomesWrap.innerHTML = "<p class=\"small\">No tracked outcomes for this disease in this slate.</p>";
+        return;
+      }
+      const rows = outcomes.map((o) =>
+        "<tr>" +
+        "<td>" + escapeHtml(o.drug_name) + "</td>" +
+        "<td>" + escapeHtml(o.type) + "</td>" +
+        "<td>" + escapeHtml(o.source) + "</td>" +
+        "<td>" + escapeHtml(o.date) + "</td>" +
+        "</tr>"
+      ).join("");
+
+      outcomesWrap.innerHTML =
+        "<h3>Tracked outcomes</h3>" +
+        "<table><thead><tr><th>Drug</th><th>Type</th><th>Source</th><th>Date</th></tr></thead><tbody>" +
+        rows +
+        "</tbody></table>";
+    }
+
+    function renderQuery() {
+      if (!queryData) return;
+      const diseaseKey = diseaseSelect.value;
+      const textFilter = drugFilter.value.trim().toLowerCase();
+      const tier = tierFilter.value;
+
+      const allPredictions = queryData.predictions_by_disease[diseaseKey] || [];
+      const filteredPredictions = allPredictions.filter((p) => {
+        const matchDrug = !textFilter || (p.drug_name || "").toLowerCase().includes(textFilter);
+        const matchTier = !tier || p.tier === tier;
+        return matchDrug && matchTier;
+      });
+      const outcomes = queryData.outcomes_by_disease[diseaseKey] || [];
+
+      querySummary.textContent =
+        "Showing " + filteredPredictions.length + " of " + allPredictions.length +
+        " predictions and " + outcomes.length + " outcomes for selected disease.";
+
+      renderPredictions(filteredPredictions);
+      renderOutcomes(outcomes);
+    }
+
+    fetch("slates/2026-Q1/query_data.json")
+      .then((response) => {
+        if (!response.ok) throw new Error("Could not load query_data.json");
+        return response.json();
+      })
+      .then((data) => {
+        queryData = data;
+        diseaseSelect.innerHTML = data.diseases.map((d) =>
+          "<option value=\"" + escapeHtml(d.key) + "\">" + escapeHtml(d.label) + "</option>"
+        ).join("");
+        renderQuery();
+      })
+      .catch((error) => {
+        querySummary.textContent = "Unable to load query dataset: " + error.message;
+      });
+
+    diseaseSelect.addEventListener("change", renderQuery);
+    drugFilter.addEventListener("input", renderQuery);
+    tierFilter.addEventListener("change", renderQuery);
+  </script>
 </body>
 </html>
