@@ -2,7 +2,7 @@
 
 How to independently verify predictions, slates, and enrichment metrics.
 
-This is not a setup guide. It assumes you have access to the codebase and data directory. The goal is conceptual transparency: what would you need to check, and how?
+**Scope:** This repository contains the published artifacts — frozen slates, outcomes, and documentation. Sections 1 and 5 below use only files in this repo. Sections 2–4 describe verification steps that require the full Exmplr pipeline (model, upstream data, outcome ingestion scripts), which lives in a separate codebase.
 
 ---
 
@@ -11,8 +11,8 @@ This is not a setup guide. It assumes you have access to the codebase and data d
 Every slate has a deterministic fingerprint stored in `slates.json` and embedded in `registry.parquet`. To verify a slate is authentic:
 
 ```bash
-# Read the slate manifest
-cat api/data/derived/repurposing/hypothesis_registry/slates.json | python3 -m json.tool
+# Read the slate manifest (from repo root)
+cat slates/2026-Q1/slates.json | python3 -m json.tool
 ```
 
 Each entry contains:
@@ -20,14 +20,16 @@ Each entry contains:
 | Field | What to check |
 |-------|--------------|
 | `git_sha` | `git log --oneline -1 dceb02b` — confirm this commit exists and predates the slate |
-| `best_model_hash` | `python3 -c "import hashlib; print(hashlib.md5(open('api/data/derived/repurposing/models/best_model.json','rb').read()).hexdigest()[:16])"` |
-| `top_candidates_hash` | Same hash method on `top_candidates.parquet` |
-| `top_candidates_size` | `stat -c %s api/data/derived/repurposing/top_candidates.parquet` |
-| `top_candidates_mtime` | `stat -c %Y.%N api/data/derived/repurposing/top_candidates.parquet` |
+| `best_model_hash` | Requires the model file from the Exmplr pipeline (not in this repo) |
+| `top_candidates_hash` | Requires `top_candidates.parquet` from the Exmplr pipeline (not in this repo) |
+| `top_candidates_size` | `stat -c %s <path_to_top_candidates.parquet>` |
+| `top_candidates_mtime` | `stat -c %Y.%N <path_to_top_candidates.parquet>` |
 
-If any hash differs from what's recorded, the slate was frozen against different data than what currently exists. This is expected if the model has been retrained since the freeze — the fingerprint records the state at freeze time, not the current state.
+Full fingerprint verification (model and candidate file hashes) requires access to the internal pipeline. The `slates.json` and `registry.parquet` in this repo are the canonical published records. If any hash in the manifest differs from what you compute from the source files, the slate was frozen against different data than what currently exists.
 
 ## 2. Rerun a Freeze
+
+*Requires the Exmplr pipeline. Paths below refer to that codebase.*
 
 To reproduce a slate's predictions (assuming the data and model match the fingerprint):
 
@@ -68,6 +70,8 @@ for d in diff[:10]:
 Zero differences means the slate is reproducible.
 
 ## 3. Independently Confirm Outcomes
+
+*Requires the Exmplr pipeline and upstream data (ChEMBL, CT.gov parquet files).*
 
 Outcomes are detected by joining frozen predictions against external data sources. To verify:
 
@@ -118,6 +122,8 @@ This is idempotent. Running it again will find zero new outcomes (all existing o
 
 ## 4. Recompute Enrichment Metrics
 
+*Requires the Exmplr API service or `api.services.repurposing_queries`.*
+
 Performance metrics are not cached. They are computed live from `registry.parquet` and `outcomes.parquet`:
 
 ```bash
@@ -154,7 +160,7 @@ The ultimate verification is checking predictions against public databases direc
 |--------|-----|---------------|
 | ClinicalTrials.gov | https://clinicaltrials.gov/ | Search drug + disease, check trial phases and dates |
 | ChEMBL | https://www.ebi.ac.uk/chembl/ | Search drug, check indication phases |
-| FDA@FDA | https://www.accessdata.fda.gov/scripts/cder/daf/ | Search drug, check approval dates and indications |
+| FDA | https://www.accessdata.fda.gov/scripts/cder/daf/ | Search drug, check approval dates and indications |
 
 If an outcome in our system does not match the public source, either our data is stale (expected — data refresh lag) or there is a matching error (report it).
 

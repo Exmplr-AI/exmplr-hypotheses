@@ -4,6 +4,18 @@ A prospective hypothesis registry for evaluating AI-generated drug repurposing p
 
 Predictions are frozen before outcomes are observed, tracked against real-world clinical trial registrations, phase advances, and regulatory approvals, and published with full methodology and failure analysis.
 
+Quick start page: [`index.html`](index.html)
+
+## Web page
+
+A minimal public landing page is available at [`index.html`](index.html).  
+GitHub Pages deployment is automated via [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+
+To publish:
+1. In GitHub repository settings, set **Pages** source to **GitHub Actions**.
+2. Push to `main`.
+3. The workflow deploys the site and reports the live URL.
+
 ## Current status
 
 | Slate | Frozen | Diseases | Predictions | Enrichment vs. popularity | Status |
@@ -49,7 +61,13 @@ Next update: ~May 2026 (after ChEMBL 35 + CT.gov refresh).
 
 **Popularity is controlled for.** Enrichment metrics compare predictions against drugs with equivalent indication breadth, not against random. This prevents the trivial strategy of picking well-known drugs.
 
+## Introduction
+
+- [**We Froze 350 AI Drug Predictions. Now We Wait.**](drafts/01_introducing_hypothesis_registry.md) — Why we're publishing hypotheses before we know if they're right.
+
 ## Reading the data
+
+Run DuckDB from the repository root. Paths below are relative to the repo root.
 
 ```python
 import duckdb

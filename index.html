@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exmplr Hypotheses</title>
+  <meta name="description" content="A public, prospective registry of AI drug repurposing predictions with frozen slates, falsification criteria, and quarterly outcome tracking.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1220;
+      --card: #121b2f;
+      --text: #e6edf7;
+      --muted: #a9b6cc;
+      --accent: #58a6ff;
+      --border: #2b3a55;
+      --ok: #3fb950;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f9fc;
+        --card: #ffffff;
+        --text: #0b1220;
+        --muted: #4a5872;
+        --accent: #0b63d1;
+        --border: #d7e0ef;
+        --ok: #1b7f3b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    h1, h2 { line-height: 1.2; margin: 0 0 12px; }
+    h1 { font-size: clamp(28px, 4vw, 44px); }
+    h2 { font-size: clamp(20px, 2.2vw, 28px); margin-top: 34px; }
+    p { margin: 0 0 14px; color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .hero {
+      background: linear-gradient(160deg, color-mix(in srgb, var(--card) 90%, var(--accent) 10%), var(--card));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .btn {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      background: color-mix(in srgb, var(--card) 88%, var(--accent) 12%);
+      color: var(--text);
+      font-weight: 600;
+    }
+    .btn.primary {
+      border-color: color-mix(in srgb, var(--accent) 65%, var(--border) 35%);
+      background: color-mix(in srgb, var(--accent) 24%, var(--card) 76%);
+    }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .kpi {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      background: color-mix(in srgb, var(--card) 92%, var(--accent) 8%);
+    }
+    .kpi .label { display: block; font-size: 12px; color: var(--muted); }
+    .kpi .value { display: block; font-size: 22px; font-weight: 700; margin-top: 4px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px;
+      background: var(--card);
+    }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin: 6px 0; color: var(--muted); }
+    .pill {
+      display: inline-block;
+      border: 1px solid color-mix(in srgb, var(--ok) 60%, var(--border) 40%);
+      color: var(--ok);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: 28px;
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      background: color-mix(in srgb, var(--card) 80%, var(--text) 20%);
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <span class="pill">Prospective hypothesis registry</span>
+      <h1>Exmplr Hypotheses</h1>
+      <p>
+        We freeze drug repurposing predictions before outcomes are observed, then track what happens next.
+        Successes and failures are both published.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="docs/SCOREBOARD.md">View scoreboard</a>
+        <a class="btn" href="slates/2026-Q1/">Browse Q1 slate</a>
+        <a class="btn" href="drafts/01_introducing_hypothesis_registry.md">Read intro</a>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><span class="label">Frozen</span><span class="value">2026-02-09</span></div>
+        <div class="kpi"><span class="label">Diseases</span><span class="value">7</span></div>
+        <div class="kpi"><span class="label">Predictions</span><span class="value">350</span></div>
+        <div class="kpi"><span class="label">High-tier enrichment</span><span class="value">1.70x</span></div>
+      </div>
+    </section>
+
+    <h2>What is frozen</h2>
+    <div class="grid">
+      <article class="card">
+        <strong>Immutable slates</strong>
+        <ul>
+          <li>Predictions are timestamped snapshots with deterministic fingerprints.</li>
+          <li>Past predictions are never edited, added, or removed.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <strong>Falsifiable claims</strong>
+        <ul>
+          <li>Every prediction has a time-bounded criterion that can be disproven.</li>
+          <li>Top-tier predictions have stricter success windows.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <strong>Outcome tracking</strong>
+        <ul>
+          <li>Outcomes are appended, not rewritten.</li>
+          <li>Low-signal and negative outcomes are retained for auditability.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h2>Current status</h2>
+    <div class="grid">
+      <article class="card">
+        <strong>Q1 2026 baseline</strong>
+        <ul>
+          <li>102 total detected outcomes (60 high-signal, 42 low-signal).</li>
+          <li>All day-zero outcomes are retrospective.</li>
+          <li>Prospective outcomes at baseline: 0.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <strong>Next planned update</strong>
+        <ul>
+          <li>Target: ~May 2026 (after ChEMBL 35 and CT.gov refresh).</li>
+          <li>Quarterly updates are published in the scoreboard.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h2>Read the evidence</h2>
+    <div class="grid">
+      <article class="card">
+        <strong>Core docs</strong>
+        <ul>
+          <li><a href="docs/SYSTEM.md">SYSTEM.md</a></li>
+          <li><a href="docs/SCOREBOARD.md">SCOREBOARD.md</a></li>
+          <li><a href="docs/HYPOTHESIS_REGISTRY.md">HYPOTHESIS_REGISTRY.md</a></li>
+          <li><a href="docs/METRICS.md">METRICS.md</a></li>
+          <li><a href="docs/REPLICATION.md">REPLICATION.md</a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <strong>Data files</strong>
+        <ul>
+          <li><a href="slates/2026-Q1/registry.parquet">registry.parquet</a></li>
+          <li><a href="slates/2026-Q1/outcomes.parquet">outcomes.parquet</a></li>
+          <li><a href="slates/2026-Q1/slates.json">slates.json</a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <strong>Narrative</strong>
+        <ul>
+          <li><a href="drafts/01_introducing_hypothesis_registry.md">Introducing the hypothesis registry</a></li>
+          <li><a href="docs/examples/ALS_slate_walkthrough.md">ALS slate walkthrough</a></li>
+          <li><a href="releases/2026_Q1_cross_disease_slate.md">Q1 2026 release note</a></li>
+        </ul>
+      </article>
+    </div>
+
+    <h2>Quick query</h2>
+    <p>Run from repository root:</p>
+    <p><code>python -c "import duckdb; print(duckdb.sql('select count(*) from read_parquet(\\'slates/2026-Q1/registry.parquet\\')').fetchall())"</code></p>
+
+    <footer>
+      This page is a lightweight index to the public evidence in this repository.
+      For full methods and constraints, start with <a href="docs/SYSTEM.md">SYSTEM.md</a> and <a href="docs/REPLICATION.md">REPLICATION.md</a>.
+    </footer>
+  </main>
+</body>
+</html>
