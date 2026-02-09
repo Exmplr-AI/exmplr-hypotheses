@@ -35,13 +35,30 @@
       color: var(--text);
     }
     .container {
-      max-width: 980px;
+      max-width: 1060px;
       margin: 0 auto;
       padding: 28px 18px 48px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .toplinks {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
     }
     h1, h2 { line-height: 1.2; margin: 0 0 12px; }
     h1 { font-size: clamp(28px, 4vw, 44px); }
     h2 { font-size: clamp(20px, 2.2vw, 28px); margin-top: 34px; }
+    h3 { margin: 14px 0 8px; font-size: 17px; }
     p { margin: 0 0 14px; color: var(--muted); }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -95,12 +112,22 @@
       border-radius: 10px;
       padding: 14px;
       background: var(--card);
+      transition: transform .12s ease, border-color .12s ease;
+    }
+    .card:hover {
+      transform: translateY(-1px);
+      border-color: color-mix(in srgb, var(--accent) 45%, var(--border) 55%);
     }
     .query-controls {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 10px;
       margin: 10px 0 14px;
+    }
+    .query-actions {
+      display: flex;
+      gap: 8px;
+      align-items: end;
     }
     label {
       display: block;
@@ -122,14 +149,35 @@
       margin-top: 10px;
       font-size: 14px;
     }
+    .table-wrap { overflow-x: auto; }
     th, td {
       text-align: left;
       border-bottom: 1px solid var(--border);
       padding: 8px 6px;
       vertical-align: top;
     }
+    tbody tr:hover { background: color-mix(in srgb, var(--card) 92%, var(--accent) 8%); }
     th { color: var(--muted); font-weight: 600; }
     .small { font-size: 13px; color: var(--muted); }
+    .chip-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 8px 0 10px;
+    }
+    .chip {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: color-mix(in srgb, var(--card) 95%, var(--accent) 5%);
+      color: var(--text);
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .chip.active {
+      border-color: color-mix(in srgb, var(--accent) 65%, var(--border) 35%);
+      background: color-mix(in srgb, var(--accent) 22%, var(--card) 78%);
+    }
     ul { margin: 8px 0 0 18px; padding: 0; }
     li { margin: 6px 0; color: var(--muted); }
     .pill {
@@ -159,6 +207,14 @@
 </head>
 <body>
   <main class="container">
+    <div class="topbar">
+      <div class="brand">Exmplr Hypotheses</div>
+      <div class="toplinks">
+        <a href="docs/SCOREBOARD.md">Scoreboard</a>
+        <a href="docs/REPLICATION.md">Replication</a>
+        <a href="slates/2026-Q1/">Q1 Slate</a>
+      </div>
+    </div>
     <section class="hero">
       <span class="pill">Prospective hypothesis registry</span>
       <h1>Exmplr Hypotheses</h1>
@@ -226,6 +282,7 @@
     <h2>Query diseases</h2>
     <div class="card">
       <p class="small">Select a disease to inspect frozen predictions and tracked outcomes from slate <code>469bb270-a423-4929-96bd-6eaadeb7986b</code>.</p>
+      <div id="diseaseChips" class="chip-row"></div>
       <div class="query-controls">
         <div>
           <label for="diseaseSelect">Disease</label>
@@ -243,6 +300,9 @@
             <option value="moderate">Moderate</option>
             <option value="exploratory">Exploratory</option>
           </select>
+        </div>
+        <div class="query-actions">
+          <button id="clearFiltersBtn" class="btn" type="button">Clear filters</button>
         </div>
       </div>
       <p id="querySummary" class="small">Loading query dataset...</p>
@@ -294,6 +354,8 @@
     const diseaseSelect = document.getElementById("diseaseSelect");
     const drugFilter = document.getElementById("drugFilter");
     const tierFilter = document.getElementById("tierFilter");
+    const clearFiltersBtn = document.getElementById("clearFiltersBtn");
+    const diseaseChips = document.getElementById("diseaseChips");
     const querySummary = document.getElementById("querySummary");
     const predictionsWrap = document.getElementById("predictionsWrap");
     const outcomesWrap = document.getElementById("outcomesWrap");
@@ -325,9 +387,9 @@
 
       predictionsWrap.innerHTML =
         "<h3>Predictions (top 50 shown)</h3>" +
-        "<table><thead><tr><th>Rank</th><th>Drug</th><th>Score</th><th>Tier</th></tr></thead><tbody>" +
+        "<div class=\"table-wrap\"><table><thead><tr><th>Rank</th><th>Drug</th><th>Score</th><th>Tier</th></tr></thead><tbody>" +
         rows +
-        "</tbody></table>";
+        "</tbody></table></div>";
     }
 
     function renderOutcomes(outcomes) {
@@ -346,9 +408,18 @@
 
       outcomesWrap.innerHTML =
         "<h3>Tracked outcomes</h3>" +
-        "<table><thead><tr><th>Drug</th><th>Type</th><th>Source</th><th>Date</th></tr></thead><tbody>" +
+        "<div class=\"table-wrap\"><table><thead><tr><th>Drug</th><th>Type</th><th>Source</th><th>Date</th></tr></thead><tbody>" +
         rows +
-        "</tbody></table>";
+        "</tbody></table></div>";
+    }
+
+    function renderDiseaseChips() {
+      if (!queryData) return;
+      diseaseChips.innerHTML = queryData.diseases.map((d) => {
+        const activeClass = d.key === diseaseSelect.value ? "chip active" : "chip";
+        return "<button class=\"" + activeClass + "\" type=\"button\" data-disease=\"" + escapeHtml(d.key) + "\">" +
+          escapeHtml(d.label) + "</button>";
+      }).join("");
     }
 
     function renderQuery() {
@@ -369,6 +440,7 @@
         "Showing " + filteredPredictions.length + " of " + allPredictions.length +
         " predictions and " + outcomes.length + " outcomes for selected disease.";
 
+      renderDiseaseChips();
       renderPredictions(filteredPredictions);
       renderOutcomes(outcomes);
     }
@@ -392,6 +464,17 @@
     diseaseSelect.addEventListener("change", renderQuery);
     drugFilter.addEventListener("input", renderQuery);
     tierFilter.addEventListener("change", renderQuery);
+    clearFiltersBtn.addEventListener("click", () => {
+      drugFilter.value = "";
+      tierFilter.value = "";
+      renderQuery();
+    });
+    diseaseChips.addEventListener("click", (event) => {
+      const target = event.target.closest("[data-disease]");
+      if (!target) return;
+      diseaseSelect.value = target.getAttribute("data-disease");
+      renderQuery();
+    });
   </script>
 </body>
 </html>
