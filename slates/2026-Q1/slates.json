@@ -1,0 +1,70 @@
+[
+  {
+    "slate_id": "302b34f7-1053-483a-bf12-c68109990cea",
+    "created_at": "2026-02-09T20:57:03.434528+00:00",
+    "description": "Initial prospective validation - TNBC",
+    "n_predictions": 20,
+    "n_diseases": 1,
+    "top_k": 20,
+    "min_score": 0.3,
+    "model_version": "v5_rescue_features",
+    "diseases_filter": [
+      "triple negative breast cancer"
+    ],
+    "fingerprint": {
+      "git_sha": "dceb02bfba091c313e9ac5e53595e49856b7d905",
+      "best_model_hash": "c3703da0dc450a1f",
+      "top_candidates_hash": "279103d239742f46",
+      "top_candidates_size": 2344553,
+      "top_candidates_mtime": 1770371809.6027534,
+      "parameters": {
+        "top_k": 20,
+        "min_score": 0.3,
+        "diseases": [
+          "triple negative breast cancer"
+        ]
+      },
+      "top_candidates_rows_matched": 20
+    }
+  },
+  {
+    "slate_id": "469bb270-a423-4929-96bd-6eaadeb7986b",
+    "created_at": "2026-02-09T21:02:56.356264+00:00",
+    "description": "Cross-disease prospective slate #1 \u2014 7 diseases spanning high/moderate/low trial activity",
+    "n_predictions": 350,
+    "n_diseases": 7,
+    "top_k": 50,
+    "min_score": 0.3,
+    "model_version": "v5_rescue_features",
+    "diseases_filter": [
+      "type 2 diabetes",
+      "Glioblastoma",
+      "Ulcerative colitis",
+      "amyotrophic lateral sclerosis",
+      "Systemic lupus erythematosus",
+      "Idiopathic pulmonary fibrosis",
+      "triple negative breast cancer"
+    ],
+    "fingerprint": {
+      "git_sha": "dceb02bfba091c313e9ac5e53595e49856b7d905",
+      "best_model_hash": "c3703da0dc450a1f",
+      "top_candidates_hash": "279103d239742f46",
+      "top_candidates_size": 2344553,
+      "top_candidates_mtime": 1770371809.6027534,
+      "parameters": {
+        "top_k": 50,
+        "min_score": 0.3,
+        "diseases": [
+          "type 2 diabetes",
+          "Glioblastoma",
+          "Ulcerative colitis",
+          "amyotrophic lateral sclerosis",
+          "Systemic lupus erythematosus",
+          "Idiopathic pulmonary fibrosis",
+          "triple negative breast cancer"
+        ]
+      },
+      "top_candidates_rows_matched": 350
+    }
+  }
+]
